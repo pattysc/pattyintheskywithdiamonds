@@ -42,6 +42,7 @@ class Game < Gosu::Window
       @patty.go_left if button_down?(Gosu::KbLeft)
       @patty.go_right if button_down?(Gosu::KbRight)
       @patty.go_up if button_down?(Gosu::KbUp)
+      @patty.go_down if button_down?(Gosu::KbDown)
 
       if rand < RUBY_MAKING_FREQ
         @rubies << Ruby.new(self)
