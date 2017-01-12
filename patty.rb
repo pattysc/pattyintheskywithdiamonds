@@ -21,6 +21,10 @@ class Patty
     @y -= 5
   end
 
+  def go_down
+    @y += 5
+  end
+
   def x
     @x
   end
